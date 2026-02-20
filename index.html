@@ -1,44 +1,45 @@
-
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Velora AI — AI Receptionists & Automations</title>
-  <meta name="description" content="Velora AI installs AI voice agents, chatbots, and automations that capture leads and book appointments 24/7." />
+  <title>Velora AI — Asistentes de voz, chatbots y automatización</title>
+  <meta name="description" content="Velora AI instala asistentes de voz 24/7, chatbots y automatizaciones con Airtable CRM para capturar leads y agendar citas." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Top Nav -->
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="#top">
-        <img src="assets/velora-logo.png" alt="Velora AI logo" class="brand__logo">
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Velora AI">
+        <img src="assets/velora-logo.png" alt="Velora AI" class="brand__logo">
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#demo" class="nav__cta">Get a demo</a>
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#soluciones">Soluciones</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#como">Cómo funciona</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--ghost" href="#demo">Agendar demo</a>
       </nav>
 
-      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <div class="mobile" id="mobile" aria-hidden="true">
-      <a href="#services">Services</a>
-      <a href="#how">How it works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#demo">Get a demo</a>
+    <div class="nav__mobile" id="mobile" aria-hidden="true">
+      <a href="#soluciones">Soluciones</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#faq">FAQ</a>
+      <a href="#demo">Agendar demo</a>
     </div>
   </header>
 
@@ -46,204 +47,212 @@
   <main id="top">
     <section class="hero">
       <div class="container hero__grid">
-        <div class="hero__left">
-          <div class="kicker">
-            <span class="dot"></span>
-            AI Infrastructure for Businesses
+        <div class="hero__copy">
+          <div class="chips">
+            <span class="chip">IA de voz en tiempo real</span>
+            <span class="chip">Chatbots + Formularios</span>
+            <span class="chip">Airtable CRM</span>
           </div>
 
-          <h1>
-            Never miss a call.
-            <span class="grad">Never miss a customer.</span>
-          </h1>
+          <h1>Automatiza atención y reservas con IA. 24/7.</h1>
 
-          <p class="sub">
-            Velora AI installs <b>AI voice agents</b>, <b>chatbots</b>, and <b>automations</b> that answer customers 24/7,
-            capture leads, and schedule appointments — automatically.
+          <p class="lead">
+            Velora AI instala un sistema completo para tu negocio:
+            <b>asistente de voz</b>, <b>chatbot</b>, <b>web</b> y <b>CRM en Airtable</b>.
+            Captura cada lead, responde al instante y agenda citas automáticamente.
           </p>
 
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#demo">Get a demo</a>
-            <a class="btn btn--ghost" href="#pricing">See pricing</a>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#demo">Agendar demo</a>
+            <a class="btn btn--ghost" href="#piloto">Ver ejemplo</a>
           </div>
 
-          <div class="stats">
-            <div class="stat">
-              <div class="stat__num">24/7</div>
-              <div class="stat__label">Instant responses</div>
-            </div>
-            <div class="stat">
-              <div class="stat__num">Airtable</div>
-              <div class="stat__label">Lead pipeline CRM</div>
-            </div>
-            <div class="stat">
-              <div class="stat__num">n8n</div>
-              <div class="stat__label">Automations & routing</div>
-            </div>
-          </div>
+          <p class="micro">
+            Onboarding rápido: conectamos tu número, tu web y tu CRM. Tú solo nos das la info básica.
+          </p>
         </div>
 
-        <div class="hero__right">
-          <div class="glass">
-            <div class="glass__top">
-              <div class="pill">Installed for you</div>
-              <div class="pill pill--muted">3–7 days</div>
+        <div class="hero__card">
+          <div class="panel">
+            <div class="panel__top">
+              <div class="panel__title">Lo que instalamos</div>
+              <div class="badge">Done-for-you</div>
             </div>
 
-            <div class="flow">
-              <div class="flow__item">
-                <div class="flow__icon">☎</div>
-                <div>
-                  <div class="flow__title">AI Voice Receptionist</div>
-                  <div class="flow__desc">Answers calls, qualifies leads, books appointments.</div>
-                </div>
+            <ul class="checks">
+              <li>Asistente de voz 24/7 (soporte + agenda)</li>
+              <li>Chatbot para web / Instagram</li>
+              <li>Formularios → Airtable (leads organizados)</li>
+              <li>Automatizaciones (n8n) + notificaciones</li>
+              <li>Recordatorios por SMS / email (opcional)</li>
+            </ul>
+
+            <div class="panel__bottom">
+              <div class="mini">
+                <div class="mini__label">Tiempo típico</div>
+                <div class="mini__value">3–7 días</div>
               </div>
-
-              <div class="flow__line"></div>
-
-              <div class="flow__item">
-                <div class="flow__icon">💬</div>
-                <div>
-                  <div class="flow__title">Chatbot + Forms</div>
-                  <div class="flow__desc">Website chatbot + conversion forms that collect info.</div>
-                </div>
-              </div>
-
-              <div class="flow__line"></div>
-
-              <div class="flow__item">
-                <div class="flow__icon">▦</div>
-                <div>
-                  <div class="flow__title">Airtable CRM</div>
-                  <div class="flow__desc">Every lead saved with notes, status, and follow-ups.</div>
-                </div>
-              </div>
-
-              <div class="flow__line"></div>
-
-              <div class="flow__item">
-                <div class="flow__icon">⟲</div>
-                <div>
-                  <div class="flow__title">Automated Follow-up</div>
-                  <div class="flow__desc">SMS/email alerts + reminders to convert leads faster.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="glass__cta">
-              <a class="btn btn--primary btn--full" href="#demo">Book a demo</a>
-              <div class="micro">No long calls. We show the system in 10–15 minutes.</div>
+              <a class="btn btn--primary btn--full" href="#demo">Quiero una demo</a>
+              <div class="micro muted">Demo de 10–15 min. Te mostramos el sistema.</div>
             </div>
           </div>
         </div>
       </div>
-
       <div class="hero__bg"></div>
     </section>
 
-    <!-- TRUST STRIP -->
-    <section class="strip">
-      <div class="container strip__inner">
-        <div class="strip__text">Works great for:</div>
-        <div class="strip__tags">
-          <span>Med Spas</span>
-          <span>Clinics</span>
-          <span>Auto Services</span>
-          <span>Home Services</span>
-          <span>Dealerships</span>
-          <span>Salons</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section" id="services">
+    <!-- SOLUCIONES POR TIPO -->
+    <section class="section" id="soluciones">
       <div class="container">
-        <div class="head">
-          <h2>What we install</h2>
-          <p>Not “tools”. A complete system that captures every opportunity and keeps your business responsive.</p>
+        <div class="section__head">
+          <h2>Soluciones por tipo de negocio</h2>
+          <p class="muted">Mismo motor. Flujos adaptados a tu industria.</p>
         </div>
 
-        <div class="cards">
+        <div class="grid grid--3">
           <article class="card">
-            <div class="card__icon">☎</div>
-            <h3>AI Voice Agent (24/7)</h3>
-            <p>Customer support, scheduling, FAQs, and lead capture — always on.</p>
-            <ul>
-              <li>Collects name, phone, service, and notes</li>
-              <li>Books appointments based on rules</li>
-              <li>Escalates to a human when needed</li>
-            </ul>
+            <h3>Salud y bienestar</h3>
+            <p>Reservas, confirmaciones, políticas, preguntas frecuentes.</p>
           </article>
-
           <article class="card">
-            <div class="card__icon">💬</div>
-            <h3>Chatbots + Website Forms</h3>
-            <p>Conversion-first website with chatbot and forms that push leads into CRM.</p>
-            <ul>
-              <li>Mobile-first performance</li>
-              <li>High-converting layout</li>
-              <li>Lead capture + routing</li>
-            </ul>
+            <h3>Servicios locales</h3>
+            <p>Captura de leads, cotizaciones básicas, agenda por disponibilidad.</p>
           </article>
-
           <article class="card">
-            <div class="card__icon">▦</div>
-            <h3>Airtable CRM</h3>
-            <p>A simple pipeline that keeps leads organized so nothing gets lost.</p>
-            <ul>
-              <li>Statuses, owners, notes</li>
-              <li>Appointments + follow-ups</li>
-              <li>Searchable lead history</li>
-            </ul>
+            <h3>Auto & talleres</h3>
+            <p>Citas de servicio, horarios, ubicación, seguimiento automático.</p>
           </article>
-
           <article class="card">
-            <div class="card__icon">⟲</div>
-            <h3>Automations (n8n)</h3>
-            <p>Routing, alerts, reminders, and reporting — customized to your business.</p>
-            <ul>
-              <li>SMS/email notifications</li>
-              <li>Lead scoring + escalation</li>
-              <li>Automation dashboards</li>
-            </ul>
+            <h3>Inmobiliarias</h3>
+            <p>Calificación de interesados, programación de visitas, datos al CRM.</p>
+          </article>
+          <article class="card">
+            <h3>Gimnasios & academias</h3>
+            <p>Clases, membresías, prueba gratis, recordatorios.</p>
+          </article>
+          <article class="card">
+            <h3>Agencias & consultorías</h3>
+            <p>Leads entrantes, preguntas clave y agendado a calendario.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section class="section section--alt" id="how">
+    <!-- FUNCIONES -->
+    <section class="section section--alt" id="funciones">
       <div class="container">
-        <div class="head">
-          <h2>How it works</h2>
-          <p>We install a complete system in days — then maintain it monthly.</p>
+        <div class="section__head">
+          <h2>Lo que hace por ti</h2>
+          <p class="muted">Lo esencial para convertir conversaciones en clientes.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="feature">
+            <div class="feature__top">
+              <span class="icon">☎</span>
+              <h3>Asistente de voz 24/7</h3>
+            </div>
+            <p>Atiende, filtra, responde dudas y agenda sin que tú intervengas.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__top">
+              <span class="icon">🗓</span>
+              <h3>Reservas y citas</h3>
+            </div>
+            <p>Conecta con tu flujo: Calendly/Google Calendar o webhook a tu sistema.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__top">
+              <span class="icon">💬</span>
+              <h3>Chatbot + formularios</h3>
+            </div>
+            <p>Captura leads en tu web y los guarda en Airtable con notas y contexto.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__top">
+              <span class="icon">▦</span>
+              <h3>CRM en Airtable</h3>
+            </div>
+            <p>Pipeline simple: lead → contactado → cita → cerrado. Nada se pierde.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__top">
+              <span class="icon">⟲</span>
+              <h3>Automatizaciones (n8n)</h3>
+            </div>
+            <p>Alertas, asignación, seguimiento, reportes. Todo sin trabajo manual.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__top">
+              <span class="icon">📈</span>
+              <h3>Medición</h3>
+            </div>
+            <p>Qué entra, qué agenda, qué se pierde. Mejora continua basada en datos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section" id="como">
+      <div class="container">
+        <div class="section__head">
+          <h2>Cómo funciona</h2>
+          <p class="muted">Instalación rápida + mantenimiento mensual.</p>
         </div>
 
         <div class="steps">
           <div class="step">
             <div class="step__num">01</div>
-            <div class="step__title">Quick audit</div>
-            <div class="step__desc">We learn your services, hours, and scheduling rules.</div>
+            <div class="step__title">Onboarding express</div>
+            <div class="step__desc">Recopilamos tu info: servicios, horarios, reglas y FAQs.</div>
           </div>
           <div class="step">
             <div class="step__num">02</div>
-            <div class="step__title">Install & connect</div>
-            <div class="step__desc">Voice agent + website/chatbot + CRM + automations.</div>
+            <div class="step__title">Instalamos el sistema</div>
+            <div class="step__desc">Agente + web/chatbot + Airtable + automatizaciones.</div>
           </div>
           <div class="step">
             <div class="step__num">03</div>
-            <div class="step__title">Go live</div>
-            <div class="step__desc">Test real conversations and launch. Updates included monthly.</div>
+            <div class="step__title">Optimización continua</div>
+            <div class="step__desc">Ajustes semanales, mejoras de guión y métricas.</div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="callout">
-          <div class="callout__left">
-            <h3>Most businesses recover the cost in the first month.</h3>
-            <p>Because missed calls = missed revenue. We stop the leak.</p>
+    <!-- EJEMPLO / PILOTO -->
+    <section class="section section--alt" id="piloto">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2 class="cta__title">Ejemplo listo para mostrar</h2>
+            <p class="muted">Aquí pondrás tu demo real: número para llamar, captura de leads y CRM.</p>
           </div>
-          <a class="btn btn--primary" href="#demo">Get a demo</a>
+          <a class="btn btn--primary" href="#demo">Quiero verlo</a>
+        </div>
+
+        <div class="grid grid--3" style="margin-top:16px;">
+          <div class="demo">
+            <div class="demo__label">Llamar al agente</div>
+            <div class="demo__value" id="demoNumber">+1 (000) 000-0000</div>
+            <button class="btn btn--ghost btn--full" data-copy="+1 (000) 000-0000">Copiar número</button>
+          </div>
+          <div class="demo">
+            <div class="demo__label">Chatbot</div>
+            <div class="demo__value">Widget en la web</div>
+            <a class="btn btn--ghost btn--full" href="#demo">Ver demo</a>
+          </div>
+          <div class="demo">
+            <div class="demo__label">Airtable CRM</div>
+            <div class="demo__value">Pipeline de leads</div>
+            <a class="btn btn--ghost btn--full" href="#demo">Ver pipeline</a>
+          </div>
         </div>
       </div>
     </section>
@@ -251,130 +260,144 @@
     <!-- PRICING -->
     <section class="section" id="pricing">
       <div class="container">
-        <div class="head">
-          <h2>Pricing</h2>
-          <p>Simple setup + monthly maintenance. Cancel anytime.</p>
+        <div class="section__head">
+          <h2>Precios</h2>
+          <p class="muted">Setup + mensual. Sin complicaciones.</p>
         </div>
 
         <div class="pricing">
           <div class="price">
-            <div class="price__top">
-              <h3>Voice Agent + Airtable CRM</h3>
-              <p>For businesses that want calls handled 24/7 and leads organized.</p>
-            </div>
-
+            <div class="price__name">Agente + CRM (Airtable)</div>
             <div class="price__money">
-              <div class="money">
-                <span class="money__big">$800</span>
-                <span class="money__small">setup</span>
-              </div>
-              <div class="submoney">$400 / month</div>
+              <span class="big">$800</span> <span class="muted">setup</span>
             </div>
-
-            <ul class="checks">
-              <li>AI voice agent (calls + support)</li>
+            <div class="price__sub">$400 / mes</div>
+            <ul class="checks checks--tight">
+              <li>Asistente de voz 24/7</li>
               <li>Airtable CRM pipeline</li>
-              <li>Lead capture + alerts</li>
-              <li>Basic n8n automations</li>
+              <li>Leads + notificaciones</li>
+              <li>Automatizaciones básicas</li>
             </ul>
-
-            <a class="btn btn--ghost btn--full" href="#demo">Request demo</a>
+            <a class="btn btn--ghost btn--full" href="#demo">Agendar demo</a>
           </div>
 
           <div class="price price--featured">
-            <div class="badge">Best value</div>
-
-            <div class="price__top">
-              <h3>Full Automation System</h3>
-              <p>Website + chatbot + voice agent + CRM + automations.</p>
-            </div>
-
+            <div class="ribbon">Mejor opción</div>
+            <div class="price__name">Sistema completo</div>
             <div class="price__money">
-              <div class="money">
-                <span class="money__big">$1200</span>
-                <span class="money__small">setup</span>
-              </div>
-              <div class="submoney">$500 / month</div>
+              <span class="big">$1200</span> <span class="muted">setup</span>
             </div>
-
-            <ul class="checks">
-              <li>Website (conversion-first)</li>
-              <li>Chatbot + website forms</li>
-              <li>AI voice agent 24/7</li>
+            <div class="price__sub">$500 / mes</div>
+            <ul class="checks checks--tight">
+              <li>Website + formularios</li>
+              <li>Chatbot integrado</li>
+              <li>Asistente de voz 24/7</li>
               <li>Airtable CRM pipeline</li>
-              <li>Full n8n automations</li>
+              <li>Automatizaciones completas</li>
             </ul>
-
-            <a class="btn btn--primary btn--full" href="#demo">Book demo</a>
-            <div class="micro center">Most clients choose this package.</div>
+            <a class="btn btn--primary btn--full" href="#demo">Agendar demo</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- DEMO / CONTACT -->
-    <section class="section section--alt" id="demo">
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
       <div class="container">
-        <div class="head">
-          <h2>Get a demo</h2>
-          <p>Fill this out and we’ll show you a live system. (We’ll connect this to Airtable next.)</p>
+        <div class="section__head">
+          <h2>Preguntas frecuentes</h2>
+          <p class="muted">Respuestas rápidas para cerrar dudas.</p>
         </div>
 
-        <div class="demo">
+        <div class="faq">
+          <button class="faq__q" data-faq>
+            ¿Para qué negocios funciona?
+            <span>+</span>
+          </button>
+          <div class="faq__a">
+            Funciona para la mayoría de negocios con llamadas, leads o reservas. Adaptamos el flujo a tu operación y a tu forma de agendar.
+          </div>
+
+          <button class="faq__q" data-faq>
+            ¿Cómo agenda citas?
+            <span>+</span>
+          </button>
+          <div class="faq__a">
+            Podemos conectar con Calendly/Google Calendar o usar webhooks a tu sistema. El objetivo es que la cita quede confirmada y registrada.
+          </div>
+
+          <button class="faq__q" data-faq>
+            ¿Qué incluye el mantenimiento mensual?
+            <span>+</span>
+          </button>
+          <div class="faq__a">
+            Ajustes del flujo, mejoras del guión, correcciones, monitoreo y optimización según métricas. Tu sistema no se queda “estático”.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO FORM -->
+    <section class="section" id="demo">
+      <div class="container">
+        <div class="section__head">
+          <h2>Agendar demo</h2>
+          <p class="muted">Deja tu info y te mostramos el sistema. Luego lo conectamos a Airtable (n8n).</p>
+        </div>
+
+        <div class="formwrap">
           <form class="form" id="leadForm">
             <div class="row">
-              <label>Full name
-                <input name="name" required placeholder="John Smith" />
+              <label>Nombre
+                <input name="name" required placeholder="Tu nombre" />
               </label>
-              <label>Business name
-                <input name="business" required placeholder="Miami Med Spa" />
+              <label>Negocio
+                <input name="business" required placeholder="Nombre del negocio" />
               </label>
             </div>
 
             <div class="row">
               <label>Email
-                <input type="email" name="email" required placeholder="you@business.com" />
+                <input type="email" name="email" required placeholder="tu@negocio.com" />
               </label>
-              <label>Phone
-                <input name="phone" required placeholder="+1 (305) 000-0000" />
+              <label>Teléfono
+                <input name="phone" required placeholder="+1 (___) ___-____" />
               </label>
             </div>
 
-            <label>What do you need?
+            <label>¿Qué necesitas?
               <select name="package" required>
-                <option value="" selected disabled>Select</option>
-                <option>Full Automation System</option>
-                <option>Voice Agent + Airtable CRM</option>
-                <option>Not sure — show me the best option</option>
+                <option value="" selected disabled>Seleccionar</option>
+                <option>Sistema completo</option>
+                <option>Agente + CRM</option>
+                <option>No estoy seguro</option>
               </select>
             </label>
 
-            <label>Notes (optional)
-              <textarea name="notes" rows="4" placeholder="What industry? Any scheduling details?"></textarea>
+            <label>Notas (opcional)
+              <textarea name="notes" rows="4" placeholder="Industria, horarios, cómo agendas hoy, etc."></textarea>
             </label>
 
-            <button class="btn btn--primary btn--full" type="submit">Submit</button>
+            <button class="btn btn--primary btn--full" type="submit">Enviar</button>
             <div class="status" id="status"></div>
           </form>
 
-          <aside class="side">
-            <div class="sidebox">
-              <h3>What happens next</h3>
+          <aside class="aside">
+            <div class="aside__box">
+              <h3>Qué pasa después</h3>
               <ol>
-                <li>We review your needs</li>
-                <li>We show the live demo</li>
-                <li>We install your system in 3–7 days</li>
+                <li>Revisamos tu caso</li>
+                <li>Te mostramos demo en vivo</li>
+                <li>Instalamos en 3–7 días</li>
               </ol>
-              <div class="line"></div>
-              <p class="micro">
-                Want to look more legit instantly? Add a domain email (hello@veloraai.com) + a simple “About” section.
-              </p>
+              <div class="sep"></div>
+              <p class="muted small">Luego conectamos este formulario a Airtable vía n8n para que te lleguen leads automáticamente.</p>
             </div>
 
-            <div class="footer">
-              <div>© <span id="year"></span> Velora AI</div>
-              <a href="#top">Back to top</a>
-            </div>
+            <footer class="footer">
+              <div class="muted small">© <span id="year"></span> Velora AI</div>
+              <a class="small" href="#top">Arriba</a>
+            </footer>
           </aside>
         </div>
       </div>
